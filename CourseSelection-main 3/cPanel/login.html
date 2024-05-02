@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script>
+        // Function to check for error message in the URL and display it in a popup box
+        function displayErrorMessage() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+            if (error) {
+                alert(error); // Show error message in an alert box
+            }
+        }
+    </script>
+</head>
+<body onload="displayErrorMessage()">
+    <nav class="navbar">
+        <div class="navbar-container">
+          <a href="login.html" class="navbar-brand">Course Management System</a>
+          <div class="navbar-links">
+            <a href="login.html">Home</a>
+            <a href="register.html">Register</a>
+          </div>
+        </div>
+      </nav>
+
+    <main>
+        <h1 class ="login-title" > Course Management System</h1> <!-- Large title -->
+        <div class="login-form">
+            <h2>Login</h2>
+            <form action="login.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <input type="submit" value="Login">
+            </form>
+            <p>Not registered? <a href="register.html">Click Here!</a></p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; <?php echo date("Y"); ?> Course Management System. All rights reserved.</p>
+    </footer>
+</body>
+</html>

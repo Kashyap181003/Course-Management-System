@@ -1,0 +1,360 @@
+/* Resetting default margin and padding */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+    font-size: 14px; /* Adjust the base font size */
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: linear-gradient(to bottom, #FF0000, #CC0000, #990000); /* Red gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure full viewport height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Header styling */
+header {
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+    padding: 15px; /* Adjust header padding */
+    text-align: center; /* Center header text */
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 15px; /* Adjust margin between nav items */
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+main {
+    padding: 15px; /* Adjust main content padding */
+    text-align: center; /* Center main content */
+}
+
+section {
+    margin-bottom: 15px; /* Adjust margin between sections */
+    display: inline-block; /* Make sections inline-block for centering */
+    text-align: left; /* Reset text alignment for section contents */
+}
+
+h2 {
+    color: #333;
+    font-size: 18px; /* Adjust h2 font size */
+    margin-bottom: 10px; /* Adjust margin bottom for h2 */
+}
+
+/* Login form styling */
+.login-form {
+    background-color: #fff;
+    padding: 15px; /* Adjust form padding */
+    border-radius: 5px;
+    width: 280px; /* Adjust form width */
+    margin: 0 auto; /* Center form horizontally */
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px; /* Adjust margin bottom for labels */
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="number"] {
+    width: calc(100% - 20px); /* Adjust width for input fields */
+    padding: 8px;
+    margin-bottom: 8px; /* Adjust margin bottom for inputs */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.login-form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.login-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* CSS for the navigation bar */
+.navbar {
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+    padding: 10px 0; /* Adjust nav bar padding */
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000; /* Ensure the navigation bar appears above other content */
+}
+
+.navbar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+    margin-right: 60px; /* Adjust left margin to move content left */
+    padding: 10px; /* Optional: Maintain padding for aesthetics */
+}
+
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0px 12px; /* Adjust padding for nav links */
+}
+
+.navbar-links a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+
+/* Footer styling */
+footer {
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+    text-align: center;
+    padding: 8px 0; /* Adjust footer padding */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    font-size: 12px; /* Adjust footer font size */
+}
+
+/* Additional styles for form grouping */
+.form-group {
+    display: flex;
+    flex-wrap: wrap; /* Allow flex items to wrap */
+    justify-content: space-between;
+    margin-bottom: 10px; /* Adjust margin between form groups */
+    text-align: center;
+}
+
+.form-group input[type="text"],
+.form-group input[type="password"],
+.form-group input[type="number"] {
+    width: 260px; /* Adjust width for input fields within form groups */
+    padding: 8px;
+    margin-bottom: 8px; /* Adjust margin bottom for inputs */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+}
+
+
+/* Table styling */
+.results-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.results-table th,
+.results-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    color: #333; /* Adjusted text color for better readability */
+}
+
+.results-table th {
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+}
+
+.results-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.table-container {
+    max-height: 700px; /* Adjust the height as per your requirement */
+    overflow-y: auto;
+}
+
+/* Custom styling for search bar */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px; /* Increase padding for more space around the search bar */
+    margin-bottom: 0px; /* Adjust margin bottom to move it down */
+}
+
+
+.search-form .search-box {
+    flex-grow: 1; /* Grow to fill available space */
+    display: flex;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    border-radius: 30px; /* Rounded border */
+    margin-right: 20px;
+    padding: 10px; /* Adjust padding */
+}
+
+.search-form input[type="text"] {
+    padding: 10px; /* Increase padding for more space inside the search box */
+    border: 1px solid black;
+    border-radius: 20px;
+    outline: none;
+    background-color: white;
+    color: #333;
+    font-size: 16px;
+    width: 300px; /* Adjust width as needed */
+    margin-right: 5px; /* Adjust left margin to move it to the left */
+}   
+
+.search-form select {
+    padding: 8px;
+    border: 1px solid black; /* Add a thin black outline */
+    border-radius: 20px; /* Make it more cylindrical */
+    background-color: white; /* Transparent background */
+    color: #333;
+    font-size: 16px;
+}
+
+.search-form input[type="submit"] {
+    padding: 8px 10px; /* Adjust padding for submit button */
+    border: none;
+    border-radius: 30px; /* Long capped cylinder effect for button */
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.search-form input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Update the style for text boxes in the dashboard */
+.input-field {
+    width: 900px; /* Adjust width for input fields */
+    padding: 4px;
+    margin-bottom: 8px; /* Adjust margin bottom for inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: #333;
+    font-size: 16px;
+    outline: none;
+}
+
+.dashboard-background {
+    width: 1000px; /* Adjust width for input fields */
+    padding: 4px;
+    margin-bottom: 8px; /* Adjust margin bottom for inputs */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: #333;
+    font-size: 16px;
+    outline: none;
+}
+
+.search-button{
+    width: 100%;
+    padding: 8px;
+    background-color: rgb(210, 20, 55);
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.nav-input-field {
+    width: 50px; /* Adjust width for input fields */
+    padding: 2px;
+    margin-bottom: 4px; /* Adjust margin bottom for inputs */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    color: #333;
+    font-size: 16px;
+    outline: none;
+}
+
+.title-above-content {
+    font-size: 24px; /* Adjust the font size as needed */
+    font-weight: bold; /* Make the title bold */
+    margin-bottom: -5px; /* Add some space below the title */
+    color: #333; /* Set the text color */
+}
+
+.login-title{
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.password-tooltip .tooltip-text {
+    visibility: hidden;
+    width: 200px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+
+  .password-tooltip .tooltip-text::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #333 transparent transparent transparent;
+  }
+
+  .password-tooltip:hover .tooltip-text,
+  .password-tooltip:focus .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+  }
